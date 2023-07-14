@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import { useConfirmationDialog } from './confirmation-dialog.hook';
 import { act, renderHook } from '@testing-library/react';
 
