@@ -3,6 +3,24 @@ import * as apiModel from './api/project.api-model';
 import * as viewModel from './project.vm';
 
 describe('project-mapper specs', () => {
+    it('should return empty array when it feeds undefined', () => {
+      // Arrange
+      const projectFromApi: apiModel.Project = undefined;
+      // Act
+      const result = mapProjectFromApiToVm(projectFromApi);
+      // Assert
+      expect(result).toEqual(viewModel.createEmptyProject());
+    });
+
+    it('should return empty array when it feeds null', () => {
+      // Arrange
+      const projectFromApi: apiModel.Project = null;
+      // Act
+      const result = mapProjectFromApiToVm(projectFromApi);
+      // Assert
+      expect(result).toEqual(viewModel.createEmptyProject());
+    });
+
     it('should map a project from API to view model', () => {
       // Arrange
       const projectFromApi: apiModel.Project = {
@@ -36,25 +54,5 @@ describe('project-mapper specs', () => {
         expect(result.employees[1].isAssigned).toEqual(false);
     });
 
-    it('should map a project from API to view model', () => {
-        // Arrange
-        const projectFromApi: apiModel.Project = {
-            id: '',
-            name: '',
-            isActive: false,
-            employees: [],
-          };
-      
-          // Act
-          const result = mapProjectFromApiToVm(projectFromApi);
-      
-          // Assert
-          const expectedViewModel: viewModel.Project = {
-            id: '',
-            name: '',
-            isActive: false,
-            employees: [],
-          };
-          expect(result).toEqual(expectedViewModel);
-      });
+  
   });
