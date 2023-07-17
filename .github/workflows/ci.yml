@@ -13,7 +13,7 @@ jobs:
         run: npm ci
 
       - name: Tests
-        run: npm run test -- --exclude=**/cypress/e2e/login.spec.ts
+        run: npm run test
         
 
   e2e:
