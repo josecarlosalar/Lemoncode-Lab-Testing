@@ -9,3 +9,5 @@ junit.xml
 .awcache
 public
 .vscode
+cypress/videos
+cypress/screenshots
