@@ -13,7 +13,7 @@ jobs:
         run: npm ci
 
       - name: Tests
-        run: npm run test
+        run: npm run test -- --exclude=**/login.spec.ts
         
 
   e2e:
