@@ -18,7 +18,6 @@ describe('Login specs', () => {
         // Arrange
         const user = 'admin';
         const password = 'test';
-        cy.on('window:alert', cy.stub().as('alertStub'));
     
         // Act
         cy.visit('/');
