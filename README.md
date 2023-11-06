@@ -1,7 +1,4 @@
-# Lemoncode Laboratorio Testing
-
-
-## Obligatorio **(Realizado)**
+# Testing
 
 - Añadir tests al mapper ./src/pods/project/project.mapper.ts.
 
@@ -10,9 +7,7 @@
 - Añadir tests al hook ./src/common/components/confirmation-dialog/confirmation-dialog.hook.ts.
 
 
-## Opcional **(Realizado)**
-
-- Crear nueva rama llamada feature/laboratorio-testing-opcional partiendo de la rama anterior feature/laboratorio-testing-obligatorio.
+- Creada nueva rama llamada feature/laboratorio-testing-opcional partiendo de la rama anterior feature/laboratorio-testing-obligatorio.
 
 - Añadir test al componente ./src/common/components/spinner/spinner.component.tsx.
 
